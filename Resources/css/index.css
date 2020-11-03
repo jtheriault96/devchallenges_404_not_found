@@ -1,5 +1,40 @@
-html {
-    font-size: 12px;
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+    /* #img-wrapper {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    } */
+    .flex-container {
+        flex-direction: column;
+        padding: 20% 10% 10%;
+    }
+    .button {
+        font-size: 1.5rem;
+    }
+    .message-body {
+        padding-bottom: 5rem;
+    }
+    .footer {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+}
+@media only screen and (min-width:769px) {
+    html {
+        font-size: 12px;
+    }
+    .flex-container {
+        padding: 7.5% 10% 10%;
+    }
+    .message-body {
+        padding-bottom: 2rem;
+    }
+    .footer {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 body {
@@ -11,7 +46,7 @@ body {
 img {
     width: 75%;
     height: auto;
-  }
+}
 
 .container {
     height: 100%;
@@ -22,10 +57,9 @@ img {
     display: flex;
     justify-content: space-evenly;
     height: 40vh;
-    /* min-height: 500px; */
+    min-height: 500px;
     width: 80%;
-    /* min-width: 700px; */
-    padding: 7.5% 10% 10%;
+    min-width: 700px;
 }
 
 .error-code-text {
@@ -58,7 +92,7 @@ img {
     line-height: 3rem;
     letter-spacing: -0.035em;
     width: 70%;
-    padding-bottom: 2rem;
+    color: 4F4F4F;
 }
 
 .button {
@@ -82,7 +116,6 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1rem;
     line-height: 1.5rem;
 
     position: fixed;
@@ -90,5 +123,4 @@ img {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 1rem;
 }
